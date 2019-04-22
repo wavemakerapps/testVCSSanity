@@ -1,0 +1,32 @@
+{
+  "wavemakeronline2_RestServiceVirtualController-invoke" : {
+    "id" : "wavemakeronline2_RestServiceVirtualController-invoke",
+    "service" : "wavemakeronline2",
+    "controller" : "RestServiceVirtualController",
+    "operationType" : "array",
+    "type" : "array",
+    "wmServiceOperationInfo" : {
+      "name" : "invoke",
+      "methodType" : "get",
+      "relativePath" : "/wavemakeronline2/invoke/rest/users/projects/list",
+      "directPath" : "https://dev-studio.wavemakeronline.com/edn-services/rest/users/projects/list",
+      "httpMethod" : "get",
+      "parameters" : [ {
+        "name" : "Cookie",
+        "parameterType" : "header",
+        "required" : false,
+        "type" : "java.lang.String",
+        "readOnly" : false,
+        "contentType" : null
+      } ],
+      "definitions" : { },
+      "produces" : [ "application/json" ],
+      "consumes" : [ "application/json" ],
+      "proxySettings" : {
+        "web" : true,
+        "mobile" : true
+      },
+      "securityDefinitions" : null
+    }
+  }
+}

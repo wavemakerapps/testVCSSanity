@@ -1,0 +1,25 @@
+{
+  "websocket_WebSocketServiceVirtualController-invoke" : {
+    "id" : "websocket_WebSocketServiceVirtualController-invoke",
+    "service" : "wavemakeronline",
+    "controller" : "WebSocketServiceVirtualController",
+    "operationType" : null,
+    "type" : null,
+    "wmServiceOperationInfo" : {
+      "name" : "invoke",
+      "methodType" : "get",
+      "relativePath" : "/websocket/invoke/randomnumber",
+      "directPath" : "wss://websocket-demos.wavemakeronline.com:443/websocket/randomnumber",
+      "httpMethod" : "get",
+      "parameters" : [ ],
+      "definitions" : { },
+      "produces" : null,
+      "consumes" : null,
+      "proxySettings" : {
+        "web" : false,
+        "mobile" : true
+      },
+      "securityDefinitions" : null
+    }
+  }
+}

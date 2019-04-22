@@ -1,0 +1,32 @@
+{
+  "MyJavaController_sampleJavaOperation" : {
+    "id" : "MyJavaController_sampleJavaOperation",
+    "service" : "MyJavaService",
+    "controller" : "MyJavaController",
+    "operationType" : "string",
+    "type" : "string",
+    "wmServiceOperationInfo" : {
+      "name" : "sampleJavaOperation",
+      "methodType" : "get",
+      "relativePath" : "/myJava/sampleJavaOperation",
+      "directPath" : "/myJava/sampleJavaOperation",
+      "httpMethod" : "get",
+      "parameters" : [ {
+        "name" : "name",
+        "parameterType" : "query",
+        "required" : false,
+        "type" : "java.lang.String",
+        "readOnly" : false,
+        "contentType" : null
+      } ],
+      "definitions" : { },
+      "produces" : [ "application/json" ],
+      "consumes" : null,
+      "proxySettings" : {
+        "web" : true,
+        "mobile" : true
+      },
+      "securityDefinitions" : null
+    }
+  }
+}

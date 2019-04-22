@@ -1,0 +1,38 @@
+<wm-prefab-container name="page1">  
+    <wm-tabs name="tabs1"> 
+        <wm-tabpane name="tabpane1" title="Web Socket"> 
+            <wm-table name="invokeTable1" title="" dataset="bind:Variables.Websocket.dataSet" navigation="Basic"></wm-table> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane2" title="REST Service"> 
+            <wm-table name="wavemakeronline2Table1" title="" dataset="bind:Variables.Wavemakeronline2Invoke.dataSet" navigation="Basic"> 
+                <wm-table-column binding="sampleApp" caption="Sample App" pcdisplay="true" mobiledisplay="true" type="boolean"></wm-table-column> 
+                <wm-table-column binding="lastModifiedAt" caption="Last Modified At" pcdisplay="true" mobiledisplay="true" type="long"></wm-table-column> 
+                <wm-table-column binding="role" caption="Role" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="accessibility" caption="Accessibility" pcdisplay="true" mobiledisplay="true" type="boolean"></wm-table-column> 
+                <wm-table-column binding="displayName" caption="Display Name" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="studioProjectId" caption="Studio Project Id" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="icon" caption="Icon" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="projectType" caption="Project Type" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="platformType" caption="Platform Type" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="description" caption="Description" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+            </wm-table> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane3" title="Java Service"> 
+            <wm-label padding="unset 0.5em" name="label1" caption="bind:Variables.serviceVariable1.dataSet.value"></wm-label> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane4" title="SOAP Service"> 
+            <wm-table title="" dataset="bind:Variables.CountryInfoServiceFullCountryInfoAllCountries.dataSet.fullCountryInfoAllCountriesResult.tCountryInfo" navigation="Basic" name="table3"> 
+                <wm-table-column binding="sisoCode" caption="Siso Code" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="sContinentCode" caption="S Continent Code" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="sCountryFlag" caption="S Country Flag" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="sCapitalCity" caption="S Capital City" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="sName" caption="S Name" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="sPhoneCode" caption="S Phone Code" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="sCurrencyISOCode" caption="S Currency Iso Code" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="languages.tLanguage[0].sisoCode" caption="Languages.tlanguage[0] Siso Code" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="languages.tLanguage[0].sName" caption="Languages.tlanguage[0] S Name" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+            </wm-table> 
+        </wm-tabpane> 
+    </wm-tabs> 
+    <wm-button class="btn-default" caption="bind:Variables.serviceVariable1.dataSet.value" type="button" margin="unset 0.5em" name="button1"></wm-button>  
+</wm-prefab-container>
